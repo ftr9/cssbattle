@@ -1,0 +1,43 @@
+<div class="p">
+  <div class="c"></div>
+</div>
+<div class="p">
+  <div class="c_1"></div>
+</div>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #09042a;
+  }
+  .p {
+    height: 150px;
+    width: 150px;
+    background: #7b3f61;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  .p:nth-of-type(1) {
+    transform: translateX(25px);
+  }
+  .p:nth-of-type(2) {
+    transform: translateX(-23px);
+    background: #e78481;
+  }
+  .c,
+  .c_1 {
+    border-radius: 50%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #09042a;
+  }
+  .c {
+    left: 68%;
+  }
+  .c_1 {
+    right: 68%;
+  }
+</style>
