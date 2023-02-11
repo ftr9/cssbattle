@@ -1,0 +1,62 @@
+<div class="parent">
+  <div class="tr tr_1"></div>
+  <div class="tr tr_11"></div>
+</div>
+
+<div class="parent">
+  <div class="tr_r tr_r_1"></div>
+  <div class="tr_r tr_r_11"></div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2b6;
+  }
+  .parent {
+    position: relative;
+  }
+  .parent:nth-of-type(1) {
+    transform: translateX(10px);
+  }
+  .parent:nth-of-type(2) {
+    transform: translateX(-30px);
+  }
+  .tr,
+  .tr_r {
+    height: 130px;
+    width: 150px;
+  }
+  .tr {
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 50% 100%);
+  }
+  .tr_r {
+    clip-path: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
+  }
+  .tr_1 {
+    background: #ff6d00;
+  }
+  .tr_11 {
+    background: #fd4602;
+  }
+  .tr_r_1 {
+    background: #fd4602;
+  }
+  .tr_r_11 {
+    background: #ff6d00;
+  }
+  .tr_1,
+  .tr_r_1 {
+    position: relative;
+    z-index: 10000;
+  }
+  .tr_11,
+  .tr_r_11 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+</style>
