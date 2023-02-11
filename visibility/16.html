@@ -1,0 +1,56 @@
+<div class="p">
+  <div class="p_c">
+    <div class="p_cc"></div>
+  </div>
+
+  <div class="t t_l"></div>
+  <div class="t t_r"></div>
+</div>
+<style>
+  body,
+  .p,
+  .p_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+    background: #0b2429;
+  }
+  .p {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #998235;
+  }
+  .p_c {
+    height: 138px;
+    width: 138px;
+    background: #f3ac3c;
+    border-radius: 50%;
+    border: 20px solid #0b2429;
+  }
+  .p_cc {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #0b2429;
+  }
+  .t {
+    height: 140px;
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 50%);
+    width: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #998235;
+    position: absolute;
+    z-index: -1;
+  }
+  .t_l {
+    left: 15%;
+  }
+  .t_r {
+    transform: rotate(180deg) translateY(50%);
+    right: 15%;
+  }
+</style>
