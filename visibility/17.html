@@ -1,0 +1,67 @@
+<div class="main" >
+  <div class="box">
+  <div class="box_r"></div>
+</div>
+<div class="box">
+  <div class="box_l"></div>
+</div>
+
+<div class="skin_circle skin_circle_1"></div>
+<div class="skin_circle skin_circle_2"></div>  
+</div>
+
+
+<style>
+  body,.main{
+    background:#09042A;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+  }
+
+  .box{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    background:#09042A;
+    border:10px solid #E78481;
+    position:relative;
+  margin:0 20px;
+  }
+  
+  .box_r,.box_l{
+    height:50px;
+    width:30px;
+    background:#E78481;
+    position:absolute;
+  }
+  .box_r{
+    right:-76%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+  .box_l{
+    left:-25%;
+    top:50%;
+         transform:translate(-50%,-50%); 
+  }
+
+  .skin_circle{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    background:#F5BB9C;
+    border:10px solid #09042A;
+    position:absolute;
+  }
+  .skin_circle_1{
+     top:-16%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .skin_circle_2{
+    top:116%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
