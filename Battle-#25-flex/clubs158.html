@@ -1,0 +1,83 @@
+<div class="circle"></div>
+<div class="row">
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+<div class="row_base">
+  <div class="row_overlay"></div>
+  <div class="semi_left"></div>
+  <div class="semi_right"></div>
+</div>
+<style>
+  body {
+    background: #4f77ff;
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    transform: translateY(10px);
+    z-index: 1000;
+  }
+  .row .circle {
+    margin: 0;
+  }
+  .row .circle:nth-of-type(1) {
+    transform: translateX(5px);
+  }
+  .row .circle:nth-of-type(2) {
+    transform: translateX(-5px);
+  }
+  .circle {
+    height: 100px;
+    width: 100px;
+    transform: translateY(40px);
+    background: #1038bf;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .row_base {
+    transform: translateY(-20px);
+    display: flex;
+    background: #4f77ff;
+    position: relative;
+  }
+  .row_overlay {
+    height: 60px;
+    width: 50px;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1038bf;
+  }
+  .semi_left {
+    height: 60px;
+    width: 100%;
+    background: #4f77ff;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 30px;
+    margin-right: 5px;
+    z-index: 1;
+  }
+  .semi_right {
+    height: 60px;
+    width: 100%;
+    background: #4f77ff;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 30px;
+    margin-left: 5px;
+    z-index: 1;
+  }
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
