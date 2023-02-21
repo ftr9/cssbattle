@@ -1,0 +1,36 @@
+<div class="m">
+  <div class="d"></div>
+  <div class="d1"></div>
+</div>
+<div class="m">
+  <div class="d"></div>
+  <div class="d1"></div>
+</div>
+<style>
+  body {
+    background: #998235;
+    margin: 0;
+    position: relative;
+  }
+  .m {
+    transform: rotate(135deg);
+    transform-origin: top;
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    right: -30%;
+  }
+  .m:nth-of-type(2) {
+    top: 115%;
+  }
+  .d,
+  .d1 {
+    height: 25px;
+  }
+  .d {
+    background: #0b2429;
+  }
+  .d1 {
+    background: #fcbe5c;
+  }
+</style>
