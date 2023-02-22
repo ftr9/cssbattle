@@ -1,0 +1,34 @@
+<div class="c">
+  <div class="s"></div>
+  <div class="s"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #4f77ff;
+  }
+  .c {
+    height: 150px;
+    width: 150px;
+    background: #1038bf;
+    position: absolute;
+  }
+  .s {
+    position: absolute;
+    height: 80px;
+    width: 50px;
+    background: #1038bf;
+  }
+
+  .s:nth-of-type(1) {
+    bottom: -50px;
+    right: 0px;
+    border-radius: 0px 0px 100px 100px;
+  }
+  .s:nth-of-type(2) {
+    bottom: -15.5px;
+    right: -35px;
+    transform: rotate(-90deg);
+    border-radius: 0px 0px 100px 100px;
+  }
+</style>
