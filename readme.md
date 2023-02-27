@@ -9,3 +9,4 @@
 [x] - contain #23
 [x] - offset #24
 [x] - flex #25
+[x] - dailyTargets
