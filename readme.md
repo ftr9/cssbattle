@@ -10,3 +10,4 @@
 [x] - offset #24
 [x] - flex #25
 [x] - dailyTargets
+[x] - visibility
